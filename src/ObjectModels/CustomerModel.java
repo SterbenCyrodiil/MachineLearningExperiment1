@@ -7,17 +7,17 @@ import java.util.List;
 //Large parts of the data here is believe to be able to be deducted from other models using data known, however, they won't be here present, since they flee the scope of the problem. Maybe in a later date!
 public class CustomerModel {
 
-    private int age;
-    private int social_class;
+    private double age;
+    private double social_class;
     private String socialMovement; //POP;HIPSTER;GEEK; Stuff like that
     private boolean employed;
     private boolean discount_buyer;
     private double avg_amount; //average expenditure when shopping
     private List<String> typical_categories; // list of most bought item categories
-    private List<Integer> typical_pricerange; //for each category, the typical price range of the products bought;
+    private List<Double> typical_pricerange; //for each category, the typical price range of the products bought;
 
-    public CustomerModel(int age, int social_class, String socialMovement, boolean employed, boolean discount_buyer,
-                         double avg_amount, List<String> typical_categories, List<Integer> typical_pricerange){
+    public CustomerModel(double age, double social_class, String socialMovement, boolean employed, boolean discount_buyer,
+                         double avg_amount, List<String> typical_categories, List<Double> typical_pricerange){
         this.age = age;
         this.social_class = social_class;
         this.socialMovement = socialMovement;
@@ -28,11 +28,11 @@ public class CustomerModel {
         this.typical_pricerange = typical_pricerange;
     }
 
-    public int getAge() {
+    public double getAge() {
         return this.age;
     }
 
-    public int getSocial_class() {
+    public double getSocial_class() {
         return this.social_class;
     }
 
@@ -52,7 +52,7 @@ public class CustomerModel {
         return this.typical_categories;
     }
 
-    public List<Integer> getTypical_pricerange() {
+    public List<Double> getTypical_pricerange() {
         return this.typical_pricerange;
     }
 

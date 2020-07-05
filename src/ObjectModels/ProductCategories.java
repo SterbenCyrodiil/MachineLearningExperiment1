@@ -1,0 +1,5 @@
+package ObjectModels;
+
+public enum ProductCategories {
+    FRESCOS, EMBALADOS, DOCES, PREFEITOS, CONGELADOS, BAZAR, AUTOMOVEL, CRIANÇA, LIMPEZA, HIGIENE, PAPELARIA
+}
